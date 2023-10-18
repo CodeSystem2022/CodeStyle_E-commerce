@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Orienta&family=Roboto:wght@100&display=swap');
+
+/* Estilo Navbar */
+.navbar-nav{
+    color: #555B68;
+    font-family: 'Orienta',
+    sans-serif;
+}
+
+.custom-navbar-collapse {
+    justify-content: flex-end;
+}
+  
+.nav-link.active {
+    color: #F68713;
+    font-weight: bold;
+}
+
+/* Estilo Footer */
+/* Estilo para el pie de página primario */
+.footer-primario {
+    font-family: 'Orienta', sans-serif;
+    background-color: #1A1E15;
+    color: white;
+    padding: 20px;
+}
+
+/* Estilos para el pie de página secundario (Copyright) */
+.footer-secundario {
+    font-family: 'Orienta', sans-serif;
+    color: #f0f0f0;
+    background-color: #141512;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+/* Estilos para Pagina NOSOTROS*/
+.nosotros-conocenos {
+    font-family: 'Orienta', normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    color: #F68712;
+    margin-top: 50px;
+}
+
+.quienes-somos {
+    font-family: 'Lobster', normal;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 75px;
+    color: #555B68;
+    margin-bottom: 20px;    
+}
+
+.parrafo-nosotros {
+    font-family: 'Orienta', sans-serif;
+    font-size: 26px;
+    color: #80CC28;
+    margin-bottom: 50px;
+}
+
+.titulos-mis-vis-val {
+    font-family: 'Lobster', normal;
+    font-weight: 400;
+    line-height: 75px;
+    color: #F68712;
+}
+
+.texto-columnas {
+    font-family: 'Orienta', sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    color: #555B68;
+    margin-bottom: 25px;
+}
+
+.bg-light-gray {
+    background-color: #f0f0f0;
+}
