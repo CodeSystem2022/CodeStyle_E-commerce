@@ -16,7 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from crud import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('procesar_pedido/', views.procesar_pedido, name='procesar_pedido'),
 ]
