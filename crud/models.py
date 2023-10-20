@@ -56,7 +56,7 @@ class Ingredientes(models.Model):
 class Pedidos(models.Model):
     id_pedido = models.AutoField(primary_key=True)
     cliente = models.ForeignKey(Clientes, models.DO_NOTHING, blank=True, null=True)
-    fecha_hora_pedido = models.DateTimeField(blank=True, null=True)
+    fecha_hora_pedido = models.DateTimeField(auto_now_add=True)
     estado_pedido = models.CharField(max_length=255, blank=True, null=True)
 
     class Meta:
