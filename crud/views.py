@@ -1,9 +1,20 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, HttpResponse
 
-from.models import Pedidos, DetallePedido
+#from.models import Pedidos, DetallePedido
+
+from carro.carro import Carro
+
+
 
 # Create your views here.
 
+def home(request):
+
+   carro=Carro(request)
+   
+   return render(request, '../templates/crud/index.html')
+
+'''
 def procesar_pedido(request):
     if request.method == 'POST':
         # toma los datos del formulario de compra
@@ -21,4 +32,5 @@ def procesar_pedido(request):
         #Agregar calculo del precio total
 
         return redirect('pagina_de_confirmacion') # Redirigir a una página de confirmación de compra
-    return render(request, 'pagos.html') # Renderizar la página de compra
+    return render(request, '../templates/crud/pagos.html') # Renderizar la página de compra
+'''

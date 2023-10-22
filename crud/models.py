@@ -21,7 +21,7 @@ class Clientes(models.Model):
         db_table = 'clientes'
 
 
-class DetallePedido(models.Model):
+'''class DetallePedido(models.Model):
     id_detalle = models.AutoField(primary_key=True)
     pedido = models.ForeignKey('Pedidos', models.DO_NOTHING, blank=True, null=True)
     producto = models.ForeignKey('Producto', models.DO_NOTHING, blank=True, null=True)
@@ -31,7 +31,7 @@ class DetallePedido(models.Model):
     class Meta:
         managed = False
         db_table = 'detalle_pedido'
-
+'''
 
 class InformacionNutricional(models.Model):
     nombre_caloria = models.CharField(max_length=255, blank=True, null=True)
@@ -53,7 +53,7 @@ class Ingredientes(models.Model):
         db_table = 'ingredientes'
 
 
-class Pedidos(models.Model):
+'''class Pedidos(models.Model):
     id_pedido = models.AutoField(primary_key=True)
     cliente = models.ForeignKey(Clientes, models.DO_NOTHING, blank=True, null=True)
     fecha_hora_pedido = models.DateTimeField(auto_now_add=True)
@@ -62,7 +62,7 @@ class Pedidos(models.Model):
     class Meta:
         managed = False
         db_table = 'pedidos'
-
+'''
 
 class Producto(models.Model):
     id_producto = models.AutoField(primary_key=True)
