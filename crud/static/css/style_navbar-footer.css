@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Orienta&family=Roboto:wght@100&display=swap');
+
+/* Estilo Navbar */
+.navbar-nav{
+    color: #555B68;
+    font-family: 'Orienta',
+    sans-serif;
+}
+
+.custom-navbar-collapse {
+    justify-content: flex-end;
+}
+  
+.nav-link.active {
+    color: #F68713;
+    font-weight: bold;
+}
+
+/* Estilo Footer */
+/* Estilo para el pie de página primario */
+.footer-primario {
+    font-family: 'Orienta', sans-serif;
+    background-color: #1A1E15;
+    color: white;
+    padding: 20px;
+}
+
+/* Estilos para el pie de página secundario (Copyright) */
+.footer-secundario {
+    font-family: 'Orienta', sans-serif;
+    color: #f0f0f0;
+    background-color: #141512;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
