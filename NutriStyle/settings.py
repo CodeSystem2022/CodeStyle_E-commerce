@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'autenticacion',
+    'carro',
+    'pedidos',
+    'tienda',
+    'contacto',
+    #'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -121,6 +127,29 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = 'static/'
+
+#MEDIA_URL='/media/'
+#MEDIA_ROOT=os.path.join(BASE_DIR, 'media')
+
+# configuración de email
+
+EMAIL_BACKEND="django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_USE_TLS=True
+EMAIL_PORT=587
+EMAIL_HOST_USER="aquí la dirección del destinatario"
+EMAIL_HOST_PASSWORD="abckzymcjtsyoewx"
+
+CRISPY_TEMPLATE_PACK='bootstrap4'
+
+#MESSAGE_TAGS={
+#    mensajes_de_error.DEBUG: 'debug',
+#    mensajes_de_error.INFO: 'info',
+#    mensajes_de_error.SUCCESS: 'success',
+#    mensajes_de_error.WARNING: 'warning',
+#    mensajes_de_error.ERROR: 'danger',
+#}
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
