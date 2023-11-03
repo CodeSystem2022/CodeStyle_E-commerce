@@ -1,0 +1,35 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Category{% endblock title %}
+
+{% block main-content %}
+
+<div class="container my-5">
+    <div class="row flex justify-content-between">
+        <div class="img2 col-lg-5">
+            <img src="{{product.product_image.url}}" class="image col-xs-6 col-sm-12 mt-3 text-sm-center w-100 h-75" alt="">
+        </div>
+        <div class="productdetail col-lg-5">
+            <h1 class="prod-title">{{product.title}}</h1>
+            <h5 class="price-discounted">$ {{product.discounted_price}}</h5>
+            <br><br><h4 class="titulo-in">Información nutricional</h4>
+            <ul class="fs-5">
+                <li>{{product.description}}</li>
+                <li>{{product.composition}}</li>
+                <li>Tipo: {{product.prodapp}}</li>
+            </ul>
+            
+            <form action="/add-to-cart" class="d-inline">
+                {% if request.user.is_authenticated %}
+                    <!-- Si el usuario está autenticado, mostrar el campo oculto con el id del producto -->
+                    <input type="hidden" name="prod_id" value="{{ product.id }}" />
+                    <button type="submit" class="btn-addtocart btn-primary shadow px-5 py-2">Añadir al carrito</button>
+                {% else %}
+                    <!-- Si el usuario no está autenticado, mostrar un enlace al inicio de sesión -->
+                    <a href="{% url 'login' %}" class="btn-iniciarsesion btn-primary shadow px-5 py-2">Iniciar sesion para añadir al carrito</a>
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

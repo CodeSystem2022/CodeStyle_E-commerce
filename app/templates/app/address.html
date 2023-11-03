@@ -1,0 +1,49 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Direccion{% endblock title %}
+
+{% block main-content %}
+<link rel="stylesheet" href="{% static '../static/app/css/direccion.css' %}">
+<div class="container my-5">
+    <div class="row">
+        <!-- Encabezado de bienvenida para el usuario logueado -->
+        <h3 class="custom-color">Bienvenid@ <span class="text-capitalize ">{{ request.user }}</span></h3>
+    
+        <div class="col-sm-2 border-end">
+            <!-- Menú de navegación lateral -->
+            <ul class="list-unstyled">
+                <li class="d-grid">
+                    <a href="{% url 'profile' %}" class="btn">Perfil</a>
+                </li>
+                <li class="d-grid">
+                    <a href="{% url 'address' %}" class="btn btn-primary">Dirección</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-sm-8 offset-sm-1">
+            <div class="row">
+                <!-- Iteración a través de las direcciones del usuario -->
+                {% for ad in add %}
+                <div class="col-sm-6">
+                    <div class="card m-2">
+                        <div class="card-body">
+                            <h3 class="custom-dire">Dirección {{ forloop.counter }}</h3>
+                            <!-- Detalles de la dirección -->
+                            <p>Nombre: {{ ad.name }}</p>
+                            <p>Localidad: {{ ad.locality }}</p>
+                            <p>Celular: {{ ad.mobile }}</p>
+                            <p>Ciudad: {{ ad.city }}</p>
+                            <p>Provincia: {{ ad.state }}</p>
+                            <p>Código postal: {{ ad.zipcode }}</p>
+                            <!-- Enlace para actualizar la dirección -->
+                            <p class="text-center"><a href="{% url 'updateAddress' pk=ad.id %}" type="button" class="btn btn-primary">Actualizar</a></p> 
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

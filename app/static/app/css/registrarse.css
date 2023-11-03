@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');
+
+h3{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F68712;
+    text-align: center;
+}
+
+.form-control{
+    background-color: #f1f1f1;
+    
+}
+
+.form-registrarse{
+    font-family:'Roboto', sans-serif;
+}
+
+.btn-primary{
+    --bs-btn-bg:#80CC28;
+    --bs-btn-border-color: #80CC28;
+    --bs-btn-hover-color: white ;
+    --bs-btn-hover-bg: #F68712 ;
+    --bs-btn-hover-border-color:#F68712 ;
+}
+
+
+.text-primary {
+    --bs-text-opacity: 1;
+    color: #F68712 !important;
+}
+
+.custom-color {
+    color: #80CC28 !important;
+}

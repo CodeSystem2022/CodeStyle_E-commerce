@@ -1,5 +1,12 @@
-/venv
-/myenv/
-/adsvenv/
-/fovenv/
+/danaenv/
+/foenv/
+/app/__pycache__/
+/app/migrations/__pycache__/
+/ec/__pycache__/
+__pycache__/
 /MV-venv/
+/ec/settings.py/
+/fervenv/
+/foenv/
+/foenv/
+/jpenv/

@@ -1,0 +1,46 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');
+
+
+
+.card {
+    width: 100%; 
+    box-shadow: 0px 1px 10px rgb(0,0,0,0.2);
+    filter: (20px 20px 30px rgba(0, 0, 0, 0.10));
+    margin: 30px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: default;
+    transition: all 400ms ease;
+    background: #fff;
+    text-align: center;
+    display: block;
+  }
+  .card:hover{
+    box-shadow: 5px 5px 20px rgb(0,0,0,0,4);
+    transform: translateY(3%);
+  }
+  
+ .card .contenido{
+    padding: 20px;
+    text-align: center;
+   }
+   .card img {
+    width: 50%;
+    padding: 0px;
+    image-orientation: center;
+   }
+  
+   .card .contenido p{
+    line-height: 1.5;
+    color: #6a6a6a;
+    font-family: roboto regular;
+   }
+   .card .contenido h5{
+    line-height: 1.5;
+    color: #6a6a6a;
+    font-family: roboto extra bold ;
+   }
+
+   
+   

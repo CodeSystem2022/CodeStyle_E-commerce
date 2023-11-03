@@ -1,0 +1,82 @@
+{% extends 'app/base.html' %} {% load static %} {% block title %}About
+{%endblock title %} {% block main-content %}
+ <!--Nosotros-->
+        <div class="container"><link rel="stylesheet"type="text/css" href="../../static/app/css/style_nosotros.css"/>
+            <div class="row">
+                <div class="col-md-12 mx-auto text-center nosotros-conocenos">
+                    CONOCE MÁS DE NOSOTROS
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mx-auto text-center quienes-somos">
+                    Quiénes somos
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 mx-auto text-center parrafo-nosotros">
+                    <p>NutriStyle es una plataforma líder en el campo de la nutrición y el bienestar en la era actual. 
+                        En un mundo donde la vida se mueve a un ritmo virtiginoso y los hábitos alimentarios están 
+                        cambiando rápidamente. <br> NutriStyle nació con la misión de promover la salud y el bienestar a 
+                        través de una alimentación consciente y planificada.</p>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <!-- Columna 1 -->
+                    <div class="col-md-6 titulos-mis-vis-val mb-5">
+                        <h2>Misión</h2>
+                        <div class="bg-light-gray p-3 texto-columnas">
+                            <p>"Nuestra misión en NutriStyle es transformar vidas a través de una alimentación saludable
+                                y consciente. Trabajamos incansablemente para proporcionar a nuestros clientes opciones 
+                                de viandas nutritivas y deliciosas, diseñadas para satisfacer sus necesidades 
+                                individuales”.</p>
+                        </div>
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-md-6 mb-5">
+                        <img src="{% static 'app/img/portada/NutriStyle(9).png' %}" alt="Cocineros muestran platos" class="img-fluid">
+                    </div>
+
+                    <!-- Columna 1 -->
+                    <div class="col-md-6 mb-5">
+                        <img src="{% static 'app/img/portada/NutriStyle_cocinando.png' %}" alt="Cocineros cocinando" class="img-fluid">
+                    </div>
+                    <!-- Columna 2 -->
+                    <div class="col-md-6 titulos-mis-vis-val mb-5">
+                        <h2>Visión</h2>
+                        <div class="bg-light-gray p-3 texto-columnas">
+                            <p>"En NutriStyle, aspiramos a ser líderes en el campo de la nutrición y el bienestar, 
+                                siendo reconocidos por la excelencia en la calidad de nuestros productos y servicios. 
+                                Buscamos ser un referente en la industria de la alimentación saludable, expandiendo 
+                                nuestro alcance para llegar a más personas y comunidades, contribuyendo así a un mundo 
+                                más saludable y equilibrado”.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Texto debajo de las columnas -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 titulos-mis-vis-val mb-5">
+                        <h2>Valores</h2>
+                        <div class="bg-light-gray texto-columnas">
+                            <ul>
+                                <li> <strong>Salud y bienestar:</strong>  Priorizamos la salud y el bienestar de nuestros clientes y empleados 
+                                    en todo lo que hacemos.</li>
+                                <li> <strong>Calidad y excelencia:</strong> Nos esforzamos por ofrecer productos y servicios de la más alta 
+                                    calidad, superando las expectativas de nuestros clientes.</li>
+                                <li> <strong>Compromiso:</strong> Estamos dedicados a apoyar a nuestros clientes en su viaje hacia una vida 
+                                    más saludable y activa, brindando un servicio excepcional y una atención personalizada.</li>
+                                <li> <strong>Integridad:</strong> Actuamos con honestidad, transparencia y ética en todas nuestras relaciones 
+                                    y operaciones.</li>
+                            </ul>
+                        </div>                        
+                    </div>
+                </div>
+            </div>            
+        </div>        
+    </main>
+    <!--Fin Nosotros-->
+
+{% endblock main-content %}

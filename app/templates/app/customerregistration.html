@@ -1,0 +1,42 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Registrarse{% endblock title %}
+
+{% block main-content %}
+<link rel="stylesheet" href="{% static '../static/app/css/registrarse.css' %}">
+<div class="container">
+    <div class="row my-3">
+        <div class="col-sm-6 offset-sm-3">
+            <h3>Registrarse</h3>
+            <br>
+
+            <form action="" method="post" novalidate class="shadow p-5 form-registrarse">
+                {% csrf_token %}
+                {% for fm in form %}
+                    {{fm.label_tag}} {{fm}} <small class="text-danger">{{fm.errors|striptags}}</small>
+                    <br>
+                {% endfor %}
+                <input type="submit" value="Enviar" class="btn btn-primary"> <br> {# Corregir 'submit' #}
+
+                <div class="text-center text-primary fw-bold">
+                    <small>¿Usuario existente? <a href='{% url 'login' %}' class="text-danger custom-color"> Ingresar </a></small>
+                </div>
+
+                {% if form.non_field_errors %}
+                   {% for error in form.non_field_errors %} {# Cambiar 'orm' a 'form' #}
+                        <p class="alert alert-danger my-3">{{error}}</p> {# Corregir 'alert-denger' a 'alert-danger' #}
+                   {% endfor %} 
+                {% endif %}
+
+                {% if messages %}
+                {% for msg in messages %}
+                    <div class="alert alert-{{msg.tags}}" role="alert">
+                        {{msg}}
+                    </div>
+                {% endfor %}
+                {% endif %}
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

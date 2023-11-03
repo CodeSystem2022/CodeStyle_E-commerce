@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&family=Roboto:wght@300;400;500;700&display=swap');
+
+.custom-color{
+    font-family: 'Lobster Two', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #F68712;
+}
+
+/* Cambia el color de fondo del radio cuando está seleccionado */
+.form-check-input:checked {
+    background-color: #80CC28;
+    border: #F68712;
+  }
+  
+.card {
+    background-color: #f1f1f1;
+  }
+
+.card-body{
+    background-color: #f1f1f1;
+}
+
+.btn-primary{
+    --bs-btn-bg:#80CC28;
+    --bs-btn-border-color: #80CC28;
+    --bs-btn-hover-color: white ;
+    --bs-btn-hover-bg: #F68712 ;
+    --bs-btn-hover-border-color:#F68712 ;
+}
+
+.pagar{
+
+    color: white;
+
+}
+
+
+  

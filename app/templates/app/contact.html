@@ -1,0 +1,44 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Contact{% endblock title %}
+
+{% block main-content %}
+<link rel="stylesheet" type="text/css" href="../../static/app/css/style_contact.css">
+<div class="container mt-5">
+    <h1 class="text-center font-title naranja">Contacto</h1>
+    <div class="row justify-content-center">
+        
+         <div class="col-md-6 ">
+            <div class="card shadow p-3 mb-5 bg-contact rounded ">
+                <div class="card-body ">
+                    <form>
+                        <div class="mb-3">
+                            <label for="disabledTextInput" class="form-label">Nombre</label>
+                            <input type="text"  class="form-control shadow" placeholder="Ingrese su nombre">
+                            
+                          </div>
+                        <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Email</label>
+                          <input type="email" class="form-control shadow"  aria-describedby="emailHelp"placeholder="Ingrese su email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label">Ingrese su comentario</label>
+                            <textarea class="form-control shadow" id="exampleFormControlTextarea1" rows="3" placeholder="Ingrese su mensaje"></textarea>
+                          </div>
+                          <div class="d-grid gap-2">
+                              <button type="submit" class="btn btn-primary">Enviar</button>
+                            
+                          </div>
+                      </form>
+                    
+                </div>
+            </div>
+            <div class="mt-4">
+                <h5 class="text-center" style="color:#555B68; font-family: Roboto">Localización</h5>
+                <!-- Mapa de Google -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1042424265697!2d-68.33037928874649!3d-34.601525457269524!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907e0b54bba47%3A0x2a273dff37a0817c!2sUTN%20-%20Facultad%20Regional%20San%20Rafael!5e0!3m2!1ses!2sar!4v1698799296147!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div> 
+    </div>
+</div>
+{% endblock main-content %}
