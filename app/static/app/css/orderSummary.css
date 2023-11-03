@@ -1,0 +1,64 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fuentes/Lobster-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Orienta';
+    src: url('../fuentes/Orienta-Regular.ttf') format('truetype');
+}
+
+.pagoExitoso{
+    text-align: left;
+    color: #80CC28;
+    font-family: 'Orienta';
+    font-size: 25px;
+}
+
+.pagoProcesado{
+    text-align: left;
+    color:#80CC28;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.alert-success{
+    background-color: #f1f1f1;
+    border: none;
+}
+
+.detallePedido{
+    text-align: left;
+    color: #F68712;
+    font-family: 'Orienta';
+    font-size: 25px;
+}
+
+th{
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+td{
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.btn-outline-success{
+    background-color: #80CC28;
+    font-family: 'Orienta';
+    color: #fff;
+    border: none;
+}
+
+.btn-outline-success:hover{
+    background-color: #F68712;
+    font-family: 'Orienta';
+    color: #fff;
+}
+
+.Ptotal{
+    margin-left: 70%;
+}

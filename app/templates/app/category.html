@@ -1,0 +1,45 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Category{% endblock title %}
+
+{% block main-content %}
+
+<link rel="stylesheet" type="text/css" href="../../static/app/css/style_productos.css">
+
+
+<div class="container my-5">
+    <h3 class="fw-title">PRODUCTOS</h3>
+    <hr></hr>
+    <div class="row">
+        <div class="col-sm-3">
+            <!-- Barra lateral con la lista de categorías -->
+            <div class="list-group">
+                <a href="{% url 'category' 'VI' %}" class="list-group-item list-group-item-action" aria-current="true">TODOS</a>
+                {% for val in title %}
+                    <!-- Crea un enlace para cada categoría -->
+                    <a href="{% url 'category-title' val.title %}" class="list-group-item list-group-item-action" aria-current="true">{{val.title}}</a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <!-- Contenedor principal de productos -->
+            <div class="row ">
+                {% for prod in product %}
+                <!-- Itera a través de los productos -->                
+                <div class="card" style="width: 18rem;"> 
+                    <a href="{% url 'product-detail' prod.id %}" class="btn">
+                        <img src="{{prod.product_image.url}}" class="card-img-top" alt="{{prod.title}}">                        
+                        <div class="card-body">
+                            <h5 class="card-title">{{prod.title}}</h5>
+                            <p class="card-text prod-comp">{{prod.composition}}</p>
+                            <h6 class="prod-price row align-items-left">${{prod.discounted_price}}</h6>
+                        </div>
+                    </a>
+                </div>                
+                {% endfor %}
+            </div>           
+        </div>
+    </div>
+</div>
+{% endblock main-content %}
+

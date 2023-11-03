@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fuentes/Lobster-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Orienta';
+    src: url('../fuentes/Orienta-Regular.ttf') format('truetype');
+}
+
+.fw-title{
+    text-align: leftr;
+    color: #80CC28;
+    font-family: 'Lobster';
+    font-size: 30px;
+}
+
+.fw-bold{
+    text-align: center;
+    color: #F68712;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.fw-bold2{
+    text-align: center;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.list-group-item{
+    text-align: left;
+    color: #5e9b19;
+    font-family: 'Orienta';
+    font-size: 18px;
+}
+
+.prod-title{
+    text-align: leftr;
+    color: #F68712;
+    font-family: 'Lobster';
+    font-size: 40px;
+}
+
+.prod-comp{
+    text-align: left;
+    font-style: italic;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.prod-price{
+    text-align: leftr;
+    color: #80CC28;
+    font-family: 'Lobster';
+    font-size: 30px;
+}
+
+.price-discounted{
+    text-align: left;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 20px;
+}
+
+.titulo-in{
+    text-align: left;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 25px;
+}
+
+.fs-5{
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 3px;
+}
+
+.btn-addtocart{
+    width: 250px;
+    background-color: #80CC28; 
+    color: #fff;
+    font-size: 14px; 
+    font-family: 'Orienta', normal;
+    padding: 10px 30px; /* Añadir espacio alrededor del texto */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 3px; /* Agregar bordes redondeados */
+}
+
+.btn-addtocart2{
+    width: 90%;
+    background-color: #80CC28; 
+    color: #fff; 
+    font-size: 14px; 
+    font-family: 'Orienta', normal;
+    padding: 10px 30px; /* Añadir espacio alrededor del texto */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 3px; /* Agregar bordes redondeados */
+}
+
+.btn-addtocart2:hover{
+    background-color: #F68712;
+}
+
+.btn-iniciarsesion{
+    width: 450px;
+    background-color: #80CC28; 
+    color: #fff; 
+    font-size: 14px; 
+    font-family: 'Orienta', normal;
+    padding: 10px 30px; /* Añadir espacio alrededor del texto */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 3px; /* Agregar bordes redondeados */
+}
+
+.text-center{
+    text-align: center;
+}
+
+.card{
+    margin: 0 10px 20px 10px;
+}

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fuentes/Lobster-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Orienta';
+    src: url('../fuentes/Orienta-Regular.ttf') format('truetype');
+}
+
+.carrito{
+    color: #F68712;
+    font-family: 'Lobster', normal;
+    font-size: 40px;
+}
+
+.productosSelec{
+    text-align: left;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 25px;
+}
+
+.tituloProd{
+    text-align: left;
+    color: #F68712;
+    font-family: 'Orienta';
+    font-size: 20px;
+}
+
+.mb-2{
+    text-align: left;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 13px;
+}
+
+.cant{
+    text-align: left;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.cantNum{
+    text-align: left;
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 15px;
+}
+
+.remove-cart{
+    color: #555B68;
+    font-family: 'Orienta';
+}
+
+.price{
+    color: #F68712;
+    font-family: 'Orienta';
+}
+
+.resumen{
+    color: #555B68;
+    font-family: 'Orienta';
+    font-size: 25px;
+}
+
+.comprar{
+    background-color: #80CC28;
+    font-family: 'Orienta';
+    color: #fff;
+}
+
+.comprar:hover{
+    background-color: #F68712;
+    font-family: 'Orienta';
+    color: #fff;
+}
+
+.restar{
+    color: #80CC28;
+}
+
+.sumar{
+    color: #80CC28;
+}
+
+.restar:hover{
+    color: #F68712;
+}
+
+.sumar:hover{
+    color: #F68712;
+}

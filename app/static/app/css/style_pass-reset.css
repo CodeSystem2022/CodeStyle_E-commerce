@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fuentes/Lobster-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Orienta';
+    src: url('../fuentes/Orienta-Regular.ttf') format('truetype');
+}
+
+h3 {
+    text-align: center;
+    color: #80CC28;
+    font-family: 'Lobster', normal;
+    font-size: 40px;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 100%;
+    background-color: #80CC28; /* Cambiar el color de fondo a verde */
+    color: #fff; /* Cambiar el color del texto a blanco */
+    font-size: 14px; /* Cambiar el tamaño de fuente a 16 píxeles */
+    font-family: 'Orienta', normal;
+    padding: 10px 30px; /* Añadir espacio alrededor del texto */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 3px; /* Agregar bordes redondeados */
+}
+
+.alert-heading{
+    text-align: center;
+    color: #80CC28;
+    font-family: 'Lobster', normal;
+    font-size: 30px;
+}
+
+.mensajeHecho{
+    font-family: 'Orienta', normal;
+}
+

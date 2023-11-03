@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Orienta';
+    src: url('../fuentes/Orienta-Regular.ttf') format('truetype');
+}
+
+
+
+.bg-dark{
+    background-color: #aef916;
+}

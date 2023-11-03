@@ -1,0 +1,178 @@
+{% extends 'app/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+
+
+{% block banner_slider %}
+<link rel="stylesheet" type="text/css" href="../../static/app/css/style_home.css">
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" >
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'app/img/Banners/6.png' %}" class="d-block w-100" alt="banner-img">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'app/img/Banners/4.png' %}" class="d-block w-100" alt="banner-img">
+      </div>
+       <div class="carousel-item">
+         <img src="{% static 'app/img/Banners/6.png' %}" class="d-block w-100" alt="banner-img">
+      </div>
+
+    </div>
+</div>
+
+{% endblock banner_slider %}
+
+
+
+{% block information %}
+<div class="  col-md-12 mx-auto text-center mt-4 ">
+    
+    <h1 style="color:#f68713; font-family: Lobster ">Viandas para ganar salud</h1>
+
+    <h6 style="color:#555B68; font-family: Roboto">
+      Nuestras recetas te ayudan a aprovechar mejor los nutrientes que tu
+      salud 
+    </h6>
+</div>
+
+  
+<div class="col-md-12 mx-auto text-center mt-5">
+    <h2 style="color:#555B68; font-family: Roboto; font-size:22px" >Conocé nuestras deliciosas viandas</h2>
+</div>
+  
+{% endblock information %}
+
+
+{% block main-content %}
+    <div class="container">        
+        
+        <div class="row container">
+            
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{% url 'category' 'MJ' %}">
+                        <div class="goodnesssec text-center">
+                            <img src="{% static 'app/img/productosNS/colita.png' %}" class="img-responsive center-block img-fluid" alt="">
+                            <p class="mlkpro">Colita de cuadril</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="col-sm-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none">
+                <div class="goodnesssec buttermilk buttermilk">
+                    <a href="{% url 'category' 'MJ' %}">
+                        <div class="goodnesssec text-center">
+                            <img src="{% static 'app/img/productosNS/albondigas.png' %}" class="img-responsive center-block img-fluid" alt="">
+                            <p class="mlkpro">Albondigas con arroz</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="col-sm-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none">
+                <div class="goodnesssec buttermilk curdbgpro">
+                    <a href="{% url 'category' 'MJ' %}">
+                        <div class="goodnesssec text-center">
+                            <img src="{% static 'app/img/productosNS/bondiola.png' %}" class="img-responsive center-block img-fluid" alt="">
+                            <p class="mlkpro">Bondiola mechada</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+      
+        <div class="row container">
+            
+            <div class="col-md-4 col-sm-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none">
+                <div class="goodnesssec buttermilk smbg">
+                    <a href="{% url 'category' 'HM' %}">
+                        <div class="goodnesssec text-center">
+                            <img src="{% static 'app/img/productosNS/verduras_salteadas3.png' %}" class="img-responsive center-block img-fluid" alt="">
+                            <p class="mlkpro">Verduras salteadas</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+           
+            <div class="col-sm-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none">
+                <div class="goodnesssec buttermilk buttermilk">
+                    <a href="{% url 'category' 'HM' %}">
+                        <div class="goodnesssec text-center">
+                            <img src="{% static 'app/img/productosNS/bowl.png' %}" class="img-responsive center-block img-fluid" alt="">
+                            <p class="mlkpro">Bowl de verduras</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+         
+            <div class="col-sm-4 col-md-4 mi-go wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" style="animation-duration: 1s; animation-delay: 0.6s; animation-name: none">
+                <div class="goodnesssec buttermilk curdbgpro">
+                    <a href="{% url 'category' 'ZA' %}">
+                        <div class="goodnesssec text-center">
+                            <img src="{% static 'app/img/productosNS/canelones1.png' %}" class="img-responsive center-block img-fluid" alt="">
+                            <p class="mlkpro">Canelones</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        
+     
+        <div class="row container mt-5">
+            
+          <h2 style="color:#f68713; font-family: Lobster; text-align: center" >
+           ¿Por qué elegir <span style="color:#80cc28; font-family: Lobster" >Nutri</span>Style?
+          </h2>
+            <!--Cards-->
+            <div class="container d-flex justify-content-center">
+                <!--Cards 1-->
+                <div class="card ">
+                    <figuere> <img src="{% static 'app/img/Logos/comida1.png' %}" class="img-responsive center-block img-fluid" alt=""> 
+                    </figuere>
+                    <div class="contenido">
+                    <h5> Comida Deliciosa</h5>
+                        <p>
+                        Nuestros platos son elaborados por excelentes profesionales y con
+                        ingredientes de la mejor calidad. ¡Probá nuestros platos y sentí el
+                        amor que ponemos en cada bocado!
+                        </p>
+                    </div>
+                </div>
+                <!--Cards 2-->
+                <div class="card">
+                    <figuere>
+                        <img src="{% static 'app/img/Logos/comidad2.png' %}" class="img-responsive center-block img-fluid" alt="">
+                    </figuere>
+                    <div class="contenido">
+                    <h5> Variedad al mejor precio</h5>
+                        <p class=" centro">
+                        Organizá tu menú semanal con nuestras viandas, tenemos opciones para
+                        todos los paladares desde carne hasta menúes veganos y vegetarianos.
+                        </p>
+                    </div>
+                </div>      
+                <!--Cards 3-->
+                <div class="card">
+                    <figure>
+                        <img src="{% static 'app/img/Logos/comida2.png' %}" class="img-responsive center-block img-fluid" alt="">
+                    </figure>
+                    <div class="contenido">
+                    <h5> Fácil y rápido</h5>
+                    <p class="centro">
+                        Disfrutá de más tiempo para vos mientras nosotros nos encargamos de la comida.
+                        Recibimos pedidos con 48hs de anticipación.</p>
+                    </div>
+                </div>    
+            </div> 
+            <!--termina las cards-->     
+        </div>
+    </div>
+   
+{% endblock main-content %}
+

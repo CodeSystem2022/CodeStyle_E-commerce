@@ -1,0 +1,48 @@
+{% extends 'app/base.html' %}  <!-- Extendemos el layout base de la aplicación -->
+{% load static %}  <!-- Cargamos archivos estáticos, como CSS y JS -->
+
+{% block title %}Pago Exitoso{% endblock title %}  <!-- Título de la página -->
+
+{% block main-content %}
+<div class="container">
+    <link rel="stylesheet" href="{% static 'app/css/orderSummary.css' %}">
+    <div class="row mt-5">
+        <div class="col-sm-12">
+            <div class="alert alert-success">
+                <h2 class="pagoExitoso">Pago exitoso!</h2>  <!-- Título de éxito del pago -->
+                <p class="pagoProcesado">Tu pago se procesó correctamente. Gracias por elegir viandas NutriStyle!</p>  <!-- Mensaje de éxito -->
+            </div>
+            <h3 class="detallePedido">Detalle del pedido</h3>  <!-- Título del resumen del pedido -->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Producto</th>  <!-- Encabezado de la columna de productos -->
+                        <th>Cantidad</th>  <!-- Encabezado de la columna de cantidad -->
+                        <th>Precio</th>  <!-- Encabezado de la columna de precio -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Iteramos a través de los elementos del carrito para mostrar los detalles del pedido -->
+                    {% for item in cart_items %}
+                    <tr>
+                        <td>{{ item.product.title }}</td>  <!-- Nombre del producto -->
+                        <td>{{ item.quantity }}</td>  <!-- Cantidad del producto -->
+                        <td>${{ item.product.discounted_price }}</td>  <!-- Precio con descuento del producto -->
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <p class="fw-bold Ptotal">Precio total: ${{ totalamount }}</p>  <!-- Costo total del pedido -->
+
+
+
+            <!-- Agregamos el botón "Home" con el estilo deseado -->
+            <div class="text-center">
+                <br>
+                <a href="/" class="btn btn-outline-success btn-lg">Volver a inicio</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock main-content %}

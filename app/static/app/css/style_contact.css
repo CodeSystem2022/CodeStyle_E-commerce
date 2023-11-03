@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fuentes/Lobster-Regular.ttf') format('truetype'); 
+}
+
+.bg-contact{
+    background-color:#80CC28 ;
+    opacity: 90%;
+}
+
+.btn-primary{
+    --bs-btn-bg: #F68712;
+    --bs-btn-border-color: #F68712;
+    --bs-btn-hover-bg: #F68711 ;
+    --bs-btn-hover-border-color:#F68711;
+    --bs-btn-active-bg: #F68711;
+    --bs-btn-active-border-color:#F68711 ;
+    --bs-btn-hover-color: #fff;
+}
+
+.font-title{
+    font-family: 'Lobster', normal;
+}
+

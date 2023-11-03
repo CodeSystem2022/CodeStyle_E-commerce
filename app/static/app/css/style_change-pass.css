@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fuentes/Lobster-Regular.ttf') format('truetype'); 
+}
+
+@font-face {
+    font-family: 'Orienta';
+    src: url('../fuentes/Orienta-Regular.ttf') format('truetype');
+}
+
+.saludo{
+    color: #80CC28;
+    font-family: 'Lobster', normal;
+    font-size: 80px;
+}
+
+.d-grid{
+    width: 450px;
+    background-color: #80CC28; 
+    color: #fff; 
+    font-size: 14px; 
+    font-family: 'Orienta', normal;
+    padding: 10px 30px; /* Añadir espacio alrededor del texto */
+    border: none; /* Eliminar el borde del botón */
+    border-radius: 3px; /* Agregar bordes redondeados */
+}
+
+.cambioExitoso{
+    font-family: 'Orienta', normal;
+    font-size: 20px;
+}
+
