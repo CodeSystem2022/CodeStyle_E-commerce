@@ -23,7 +23,7 @@ def about(request):
         totalitem= len(Cart.objects.filter(user=request.user))
     return render(request, "app/about.html",locals())
 
-# Función para la página de contacto, requiere inicio de sesión
+# Función para la página de contacto
 def contact(request):
     totalitem=0
     if request.user.is_authenticated:

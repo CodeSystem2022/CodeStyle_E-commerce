@@ -11,7 +11,7 @@ class LoginForm(AuthenticationForm):
     username = UsernameField(label='Usuario',widget=forms.TextInput(attrs={'autofocus':'True','class': 'form-control'}))
     password = forms.CharField(label='Contraseña',widget=forms.PasswordInput(attrs={'autocomplete':'current-password','class':'form-control'}))
 
-# Formulario de registro de cliente
+# Formulario de registrarse
 class CustomerRegistrationForm(UserCreationForm):
     username = forms.CharField(label='Usuario',widget=forms.TextInput(attrs={'autofocus':'True','class': 'form-control'}))
     email = forms.EmailField(widget=forms.EmailInput(attrs={'class':'form-control'}))
@@ -22,7 +22,7 @@ class CustomerRegistrationForm(UserCreationForm):
         model = User
         fields = ['username', 'email', 'password1', 'password2']
 
-# Formulario de cambio de contraseña personalizado
+# Formulario de cambio de contraseña 
 class MyPasswordChangeForm(PasswordChangeForm):
     old_password = forms.CharField(label='Contraseña anterior', widget=forms.PasswordInput(attrs={'autofocus':'True','autocomplete':'current-password','class':'form-control'}))
     new_password1 = forms.CharField(label='Nueva contraseña', widget=forms.PasswordInput(attrs={'autocomplete':'current-password','class':'form-control'}))      
@@ -37,7 +37,7 @@ class MySetPasswordForm(SetPasswordForm):
     new_password1 = forms.CharField(label='Nueva contraseña', widget=forms.PasswordInput(attrs={'autocomplete':'current-password','class':'form-control'}))      
     new_password2 = forms.CharField(label='Confirme nueva contraseña', widget=forms.PasswordInput(attrs={'autocomplete':'current-password','class':'form-control'}))  
 
-# Formulario de perfil de cliente
+# Formulario de perfil de usuario
 class CustomerProfileForm(forms.ModelForm):
     class Meta:
         model = Customer
