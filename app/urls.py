@@ -8,7 +8,7 @@ from . forms import LoginForm, MyPasswordResetForm, MyPasswordChangeForm, MySetP
 
 urlpatterns = [
     # Rutas para las vistas definidas en views.py
-    path("", views.home),  # Página de inicio
+    path("", views.home, name="home"),  # Página de inicio
     path("about/", views.about, name="about"),  # Página Acerca de
     path("contact/", views.contact, name="contact"),  # Página de contacto
     path("category/<slug:val>", views.CategoryView.as_view(), name="category"),  # Vista de categoría
