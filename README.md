@@ -26,7 +26,7 @@ Hemos preparado un breve informativo que proporciona detalles adicionales sobre 
 Realizamos el maquetado de nuestra página, utilizando Figma, el cual nos proporciona una gran cantidad de elementos visuales. Podés acceder a él en [Figma](https://www.figma.com/file/780vnDRRmVu9nQfBhxHqf0/NutriStyle?type=design&node-id=0-1&mode=design&t=ImzpkiP21BJktXKk-0)  
 
 ## Instalación de Bibliotecas. 
-Aquí explicamos como se instalan las bibliotecan que permiten poder ver el proyecto correctamente.
+Aquí explicamos como se instalan las bibliotecas que permiten poder ver el proyecto correctamente.
 
 Antes de comenzar con la configuración del E-commerce NutriStyle, es importante asegurarse de que todas las bibliotecas y dependencias necesarias estén instaladas. 
 A continuación verán una guía paso a paso para configurar el entorno de desarrollo desde la terminal:
