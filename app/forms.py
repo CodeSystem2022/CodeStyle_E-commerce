@@ -53,7 +53,7 @@ class CustomerProfileForm(forms.ModelForm):
 
         labels = {
             'name': 'Nombre',
-            'locality': 'Localidad',
+            'locality': 'Dirección',
             'city': 'Ciudad',
             'mobile': 'Celular',
             'state': 'Provincia',
