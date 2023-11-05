@@ -4,14 +4,14 @@ Esta aplicación ha sido desarrollada utilizando el marco de trabajo Django, jun
 
 <ul>
 <h2>Integrantes: </h2>
-  <li> Florencia Oviedo</li>
-  <li> Fernando Rojas</li>
-  <li> Dana Angellotti</li>
-  <li>Martin Verstraeten</li>
-  <li> Gabriela Silva</li>
-  <li> Ivana Germir</li>
-  <li> Adriana Da Silva</li>
-  <li> Juan Pablo Ayoroa</li>
+  <li> Florencia Oviedo</li>💻
+  <li> Fernando Rojas</li>💻
+  <li> Dana Angellotti</li>💻
+  <li>Martin Verstraeten</li>💻
+  <li> Gabriela Silva</li>💻
+  <li> Ivana Germir</li>💻
+  <li> Adriana Da Silva</li>💻
+  <li> Juan Pablo Ayoroa</li>💻
  </ul>
 
 ## Metodología Ágiles
@@ -19,12 +19,13 @@ Aplicamos la metodologia SCRUM en el proyecto con asignaciones de tareas por spr
 
 ## Brief
 
-Hemos preparado un breve informativo que proporciona detalles adicionales sobre nuestro proyecto. Podés acceder a él en [Brief](https://drive.google.com/file/d/1fbLWgHTvenVI_MaYhmyX_VmZexKky5Ds/view?usp=sharing)  
+Hemos preparado un breve informativo que proporciona detalles adicionales sobre nuestro proyecto y los pasos que seguimos para llegar al resultado final. Podés acceder a él en [Brief](https://drive.google.com/file/d/1fbLWgHTvenVI_MaYhmyX_VmZexKky5Ds/view?usp=sharing)  
 
 ## Figma
-Realizamos el maquetado de nuestra página. Podés acceder a él en [Figma](https://www.figma.com/file/780vnDRRmVu9nQfBhxHqf0/NutriStyle?type=design&node-id=0-1&mode=design&t=ImzpkiP21BJktXKk-0)  
+Realizamos el maquetado de nuestra página, utilizando Figma, el cual nos proporciona una gran cantidad de elementos visuales. Podés acceder a él en [Figma](https://www.figma.com/file/780vnDRRmVu9nQfBhxHqf0/NutriStyle?type=design&node-id=0-1&mode=design&t=ImzpkiP21BJktXKk-0)  
 
-## Instalación de Bibliotecas
+## Instalación de Bibliotecas. 
+Aquí explicamos como se instalan las bibliotecan que permiten poder ver el proyecto correctamente.
 
 Antes de comenzar con la configuración del E-commerce NutriStyle, es importante asegurarse de que todas las bibliotecas y dependencias necesarias estén instaladas. 
 A continuación verán una guía paso a paso para configurar el entorno de desarrollo desde la terminal:
