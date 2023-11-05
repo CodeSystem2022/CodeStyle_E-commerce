@@ -4,14 +4,14 @@ Esta aplicación ha sido desarrollada utilizando el marco de trabajo Django, jun
 
 <ul>
 <h2>Integrantes: </h2>
-  <li> Florencia Oviedo</li>💻
-  <li> Fernando Rojas</li>💻
-  <li> Dana Angellotti</li>💻
-  <li>Martin Verstraeten</li>💻
-  <li> Gabriela Silva</li>💻
-  <li> Ivana Germir</li>💻
-  <li> Adriana Da Silva</li>💻
-  <li> Juan Pablo Ayoroa</li>💻
+  <li> Florencia Oviedo 💻</li>
+  <li> Fernando Rojas 💻</li>
+  <li> Dana Angellotti 💻</li>
+  <li>Martin Verstraeten 💻</li>
+  <li> Gabriela Silva 💻</li>
+  <li> Ivana Germir 💻</li>
+  <li> Adriana Da Silva 💻</li>
+  <li> Juan Pablo Ayoroa 💻</li>
  </ul>
 
 ## Metodología Ágiles
