@@ -5,7 +5,7 @@ from django.urls import reverse
 
 # Register your models here.
 
-# Registra el modelo Product en el panel de administración
+# Registra el modelo Producto en el panel de administración
 @admin.register(Product)
 class ProductModelAdmin(admin.ModelAdmin):
     list_display=['id','title','discounted_price','category','product_image']
@@ -15,7 +15,7 @@ class ProductModelAdmin(admin.ModelAdmin):
 class CustomerModelAdmin(admin.ModelAdmin):
     list_display=['id','user','locality','city','state','zipcode']
 
-# Registra el modelo Cart en el panel de administración
+# Registra el modelo Carrito en el panel de administración
 @admin.register(Cart)
 class CartModelAdmin(admin.ModelAdmin):
     list_display=['id','user','products','quantity']
@@ -26,7 +26,7 @@ class CartModelAdmin(admin.ModelAdmin):
         link = reverse("admin:app_product_change", args=[obj.product.pk])
         return format_html('<a href="{}">{}</a>', link, obj.product.title)
 
-# Registra el modelo Payment en el panel de administración
+# Registra el modelo Pago en el panel de administración
 @admin.register(Payment)
 class PaymentModelAdmin(admin.ModelAdmin):
     list_display=['id','user','amount','razorpay_order_id','razorpay_payment_status','razorpay_payment_id','paid']
