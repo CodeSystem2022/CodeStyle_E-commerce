@@ -124,16 +124,16 @@
                     <a href="#" class=" text-decoration-none text-light">Inicio</a>
                 </p>
                 <p>
-                    <a href="#" class=" text-decoration-none text-light">Nosotros</a>
+                    <a href="{% url 'about'  %}" class=" text-decoration-none text-light">Nosotros</a>
                 </p>
                 <p>
-                    <a href="#" class=" text-decoration-none text-light">Productos</a>
+                    <a href="{% url 'category' 'VI' %}" class=" text-decoration-none text-light">Productos</a>
                 </p>
                 <p>
-                    <a href="#" class=" text-decoration-none text-light">Contacto</a>
+                    <a href="{% url 'contact' %}" class=" text-decoration-none text-light">Contacto</a>
                 </p>
                 <p>
-                  <a href="#" class=" text-decoration-none text-light">Iniciar sesión</a>
+                  <a href="{% url 'login' %}" class=" text-decoration-none text-light">login</a>
               </p>
             </div>
 
