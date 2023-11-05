@@ -1,4 +1,4 @@
-# E-commerce NutriStyle <img src="[URL de la imagen](https://github.com/CodeSystem2022/CodeStyle_E-commerce/blob/main/app/static/app/img/Logos/NutriStyle.png)" alt="NutriStyle" width="200" height="200">
+# E-commerce NutriStyle <img src="https://github.com/CodeSystem2022/CodeStyle_E-commerce/blob/main/app/static/app/img/Logos/NutriStyle.png" alt="NutriStyle" width="200" height="200">
 
 NutriStyle es un sitio web de E-Commerce formado por un equipo multidisciplinario de expertos en nutrición, medicina y cocina. Nuestra plataforma especializada ofrece viandas saludables.
 Esta aplicación ha sido desarrollada utilizando el marco de trabajo Django, junto con tecnologías web como Bootstrap, HTML, CSS , JavaScript y como base de datos PostgreSQL.
