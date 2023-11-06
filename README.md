@@ -17,6 +17,7 @@ Esta aplicación ha sido desarrollada utilizando el marco de trabajo Django, jun
 
 ## Metodología Ágiles
 Aplicamos la metodologia SCRUM en el proyecto con asignaciones de tareas por sprint.
+Para más información [Wiki](https://github.com/CodeSystem2022/CodeStyle_E-commerce/wiki)
 
 ## Brief
 
