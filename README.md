@@ -70,7 +70,7 @@ pip install psycopg2
 ### 1. Conectar con la base de datos:  
 * En PostgreSQL segui los siguientes pasos:
   
-   - Ingresa a PGAdmin4 y creeá una nueva base de datos llamada "EcommerceNS"
+   - Ingresa a PGAdmin4 y creá una nueva base de datos llamada "EcommerceNS"
    - Click derecho sobre la base de datos
    - Click en restore
    - Seleccionar el archivo de la base de datos del proyecto ( se encuentra en el proyecto como archivo: "EcommerceNS.sql")
