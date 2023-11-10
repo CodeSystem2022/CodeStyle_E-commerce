@@ -21,7 +21,7 @@ Para más información [Wiki](https://github.com/CodeSystem2022/CodeStyle_E-comm
 
 ## Brief
 
-Hemos preparado un breve informativo que proporciona detalles adicionales sobre nuestro proyecto y los pasos que seguimos para llegar al resultado final. Podés acceder a él en [Brief](https://drive.google.com/file/d/1fbLWgHTvenVI_MaYhmyX_VmZexKky5Ds/view?usp=sharing)  
+Hemos preparado un breve informativo que proporciona detalles adicionales sobre nuestro proyecto. Podés acceder a él en [Brief](https://drive.google.com/file/d/1fbLWgHTvenVI_MaYhmyX_VmZexKky5Ds/view?usp=sharing)  
 
 ## Figma
 Realizamos el maquetado de nuestra página, utilizando Figma, el cual nos proporciona una gran cantidad de elementos visuales. Podés acceder a él en [Figma](https://www.figma.com/file/780vnDRRmVu9nQfBhxHqf0/NutriStyle?type=design&node-id=0-1&mode=design&t=ImzpkiP21BJktXKk-0)  
@@ -59,7 +59,7 @@ pip install Django
 pip install Pillow
 ```
 
-### 4. Instalar Psycopg2 (para el manejo de la base de datos):
+### 5. Instalar Psycopg2 (para el manejo de la base de datos):
 
 ```shell
 pip install psycopg2
